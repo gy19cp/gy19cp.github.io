@@ -12,3 +12,7 @@ During the course of the MSc GIS, Claire has been part of a module "Programming 
 The model code can be found in the link below. 
 
 #### [Link to Model Code](http://github.com)
+
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
