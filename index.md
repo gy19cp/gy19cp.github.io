@@ -9,6 +9,6 @@ Claire is a current MSc Geographical Information Systems (GIS) student at the Un
 
 During the course of the MSc GIS, Claire has been part of a module "Programming for Geographical Information Analysts: Core Skills". This course has developed her computer programming practical skills, particuarly with the use of Spyder (Anaconda 3) to create an agent-based model, which involves writing and structuring code, getting different code to interact and gettings code to interact with users. This  model inparticular is animated and interacts with an agent code and an environment to produce coordinates on a 'raster' grid. These plotted points (coordinates) are produced randomly and subsequently 'eat' some of the environment and 'talk' to the neigbouring points. The code uses core Python language with an object oriented approach, continous integration and web-scraping.
 
-The model code can be found below. 
+The model code can be found in the link below. 
 
-#### [Link to the code](http://github.com)
+#### [Link to Model Code](http://github.com)
