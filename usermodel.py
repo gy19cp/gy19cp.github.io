@@ -1,15 +1,14 @@
+# User Model
+"""
+The User Model contains basic comments for ease of use. 
+""" 
 
 # Libraries:
-# For Web Coordinates-
 import requests
 import bs4
-
-# For Graphical User Interface (GUI)-
 import matplotlib
 matplotlib.use('TkAgg')
 import tkinter
-
-# For Model-
 import random
 import operator 
 import agentframework 
@@ -22,10 +21,8 @@ import csv
 r = requests.get('http://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/data.html')
 content = r.text
 soup = bs4.BeautifulSoup(content, 'html.parser')
-td_ys = soup.find_all(attrs={"class" : "y"}) # y values from the web
-td_xs = soup.find_all(attrs={"class" : "x"}) # x values from the web
-#print(td_ys) # print to check if y imported correctly
-#print(td_xs) # print to check if x imported correctly
+td_ys = soup.find_all(attrs={"class" : "y"}) 
+td_xs = soup.find_all(attrs={"class" : "x"}) 
 
 
 # Animation Window Guidelines:
@@ -33,7 +30,7 @@ environment = []
 fig = matplotlib.pyplot.figure(figsize=(7, 7))
 ax = fig.add_axes([0, 0, 1, 1])
 
-# Sheep (Agent) and Foxes specified.
+# Sheep (Agents) and Foxes specified.
 num_of_agents = 30
 num_of_iterations = 200
 neighbourhood = 20
@@ -45,15 +42,13 @@ foxes = []
 
 # Methods: 
 def distance_between(agents_row_a, agents_row_b):
-     """Calculates the distance between two agents, using the pythagorus theory."""
      return ((agents_row_a.x - agents_row_b.x)**2 + (agents_row_a.y - agents_row_b.y)**2)**0.5
     
 def update(frame_number):
-    """The update function enables the animation so agents (sheep) can move, eat and share food with their neighbours and get killed by the foxes."""
     fig.clear()   
     global carry_on
     
-    random.shuffle(agents) # Where agents are found at the start is random.
+    random.shuffle(agents) 
     
     for i in range(len(agents)): 
         agents[i].move()
@@ -75,10 +70,9 @@ def update(frame_number):
         matplotlib.pyplot.scatter(foxes[i].x, foxes[i].y, color= "orange")
         
 def gen_function(b = [0]):
-    """The generate function loops the animation until num_of_iterations is met."""
     a = 0
     while (a < num_of_iterations):
-        yield a	       # Returns control and waits for next call.
+        yield a	       
         a = a + 1
                 
 # Read in the 'in.txt' document.
@@ -90,23 +84,21 @@ for row in reader:
     for value in row: 
         rowlist.append(value)  
     environment.append(rowlist) 
-f.close() # Close so document does not take up much memory. Values are appended to the environment so document is not needed. 
+f.close() 
 
 
 # Agents move if the above specifications work.
-carry_on = True	# Animations carry on running unless told otherwise.
+carry_on = True	
 
-# Intialise Agent (Sheep) Loop against web-derived coordinates.
+# Intialise Sheep (Agent) Loop against web-derived coordinates.
 for i in range(num_of_agents):
     y = int(td_ys[i].text) 
     x = int(td_xs[i].text)
     agents.append(agentframework.Agent(environment, agents, y, x))
-#print(agents [0].x) # Prints first agent to ensure model is running correctly within webpage.
-#print(agents [0].y) # Prints first agent to ensure model is running correctly within webpage.
 
 # Intialise Foxes Loop-
 for i in range(num_of_foxes):
-    y = random.randint(0,99) # Foxes are at randomly generated locations to start.
+    y = random.randint(0,99) 
     x = random.randint(0,99)
     foxes.append(agentframework.Foxes(environment, agents, y, x))
 
