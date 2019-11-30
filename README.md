@@ -13,16 +13,16 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
 
 **Step 2 -** Download the necessary files by clicking on the following hyperlinks - [User Model](http://gy19cp.github.io/model.py), [Developer Model](http://gy19cp.github.io/model.py), [Agent Framework](http://gy19cp.github.io/model.py) and [‘in’.txt](https://gy19cp.github.io/in.txt). All these files should be downloaded to the computers ‘Downloads’ folder. The User Model contains basic comments for ease for the user. The Developer Model version contains explanatory comments, testing, and debugging. 
 
-![Spyder Screenshot](http: github.jpg "Downloads").
+![DownloadsScreenshot](https://user-images.githubusercontent.com/56165241/69907151-b7b91080-13c7-11ea-8437-429513ef9913.jpg "Downloads").
 
 **Step 3 -**. Once downloaded, open Spyder and open the Agent Framework file and the selected Model (either the User/Developer version). 
 
 **Step 4 -**. Have the ‘agentframework’ file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
 
-![Spyder Screenshot](http: github.jpg "Agent Framework").
+![AgentFrameworkScreenshot](https://user-images.githubusercontent.com/56165241/69907150-b7b91080-13c7-11ea-9d6b-04106bd1f9a6.jpg "Agent Framework").
   
 **Step 5 -**. Now select the ‘model’ file within Spyder and click ‘Run’ again. This time a box entitled ‘Model’ should pop out. Click the subheading ‘Menu’ and ‘Run Model’. 
  
- ![Spyder Screenshot](http: github.jpg "Run Model").
+![RunModelScreenshot](https://user-images.githubusercontent.com/56165241/69907153-b7b91080-13c7-11ea-96b3-86d5b116af1d.jpg "Run Model").
  
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
