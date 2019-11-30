@@ -23,6 +23,6 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
   
 **Step 5 -**. Now select the ‘model’ file within Spyder and click ‘Run’ again. This time a box entitled ‘Model’ should pop out. Click the subheading ‘Menu’ and ‘Run Model’. 
  
-![RunModelScreenshot](https://user-images.githubusercontent.com/56165241/69907284-2ac38680-13ca-11ea-84ed-5f3d6e85d8d5.jpg "Run Model").
+![RunModelScreenshot](https://user-images.githubusercontent.com/56165241/69907328-44b19900-13cb-11ea-8c2d-d5cf8b92229e.jpg "Run Model").
  
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
