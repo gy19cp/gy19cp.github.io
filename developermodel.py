@@ -1,6 +1,6 @@
 # Developer Documentation
 """
-The Developer Model code contains explanatory comments, testing, and debugging. 
+The Developer Model code contains explanatory comments, testing, and debugging. For a simpler model with basic comments for ease for the user, see the User Model code. 
 """
 
 # Libraries:
