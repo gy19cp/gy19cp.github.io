@@ -1,6 +1,6 @@
 # User Model
 """
-The User Model contains basic comments for ease of use. 
+The User Model contains basic comments for ease of use. For a more structured, detailed version with explanatory comments, testing, and debugging, see the Developer Model code. 
 """ 
 
 # Libraries:
