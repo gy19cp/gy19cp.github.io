@@ -5,7 +5,7 @@ Programming for Spatial Analysts: Core Skills
 
 This animated agent-based model uses Spyder (Anaconda 3). The model code interacts with an agent framework code and an environment to produce coordinates on a 'raster' grid. The coordinates for the 'Foxes' variables are produced randomly and the 'Sheep' are plotted from an online web-derived set of data points. Both the ‘Foxes’ and ‘Sheep’ variables are defined as ‘Agents’ at distinctly defined separate times within the model. The Sheep in the model- move, 'eat' the environment, share with their nearest neighbour and a selection of the Sheep are unfortunately subsequently 'killed' by the 'Foxes' when the Foxes get sufficiently close. The code uses core Python language with an object oriented approach, continuous integration and web-scraping.
 
-# Model Files List
+### Model Files List
 -	[User Model](https://gy19cp.github.io/usermodel.py) (basic comments)
 -	[Developer Model](https://gy19cp.github.io/developermodel.py) (detailed explanatory comments, testing and debugging) 
 -	[Agent Framework](https://gy19cp.github.io/agentframework.py)
