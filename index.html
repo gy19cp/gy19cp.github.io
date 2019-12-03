@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <h1>GY19CP Portfolio</h1>
+<head>
+<title>Portfolio</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<style>
+  body{font-family: "Lato", sans-serif; 
+}
     
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px;
   position: fixed;
   z-index: 1;
-  top: 0; 
-  left: 0;
-  background-color: #111;
+  top: 20px; 
+  left: 10px;
+  background-color: #eee;
   overflow-x: hidden; 
-  padding-top: 20px;
+  padding-top: 8px, 0;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #2196F3;
   display: block;
 }
 .sidenav a:hover {
   color: #f1f1f1;
 }
 .main {
-  margin-left: 160px; 
+  margin-left: 140px;
+  font size: 28px;
   padding: 0px 10px;
 }
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-    <p>Contents Page</p>
-
-    <ul> 
+  </style>
+  </head>
+  <body>
+  
+<div class="sidenav">
+ <ul> 
       <li><p><a href="https://gy19cp.github.io/about.html">About Me</a></p></li>
       <li><p><a href="https://gy19cp.github.io/modeldetails.html">Model Details</a></p></li>
       <li><p><a href="http://gy19cp.github.io/developermodel.py">Developer Model Code</a></p></li>
       <li><p><a href="http://gy19cp.github.io/usermodel.py">User Model Code</a></p></li>
       <li><p><a href="https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE">Model Licence</a></p></li>
-    </ul>
+  </ul></div>
     
-    
-  </body>
+<div class= "main">
+ 
+<p> Side bar created and modified using W3Schools </p>
+</div>
+
+</body>
 </html>
