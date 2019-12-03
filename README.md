@@ -5,6 +5,12 @@ Programming for Spatial Analysts: Core Skills
 
 This animated agent-based model uses Spyder (Anaconda 3). The model code interacts with an agent framework code and an environment to produce coordinates on a 'raster' grid. The coordinates for the 'Foxes' variables are produced randomly and the 'Sheep' are plotted from an online web-derived set of data points. Both the ‘Foxes’ and ‘Sheep’ variables are defined as ‘Agents’ at distinctly defined separate times within the model. The Sheep in the model- move, 'eat' the environment, share with their nearest neighbour and a selection of the Sheep are unfortunately subsequently 'killed' by the 'Foxes' when the Foxes get sufficiently close. The code uses core Python language with an object oriented approach, continuous integration and web-scraping.
 
+# Model Files List
+-	[User Model](https://gy19cp.github.io/usermodel.py) (basic comments)
+-	[Developer Model](https://gy19cp.github.io/developermodel.py) (detailed explanatory comments, testing and debugging) 
+-	[Agent Framework](https://gy19cp.github.io/agentframework.py)
+-	[in.txt]( https://gy19cp.github.io/in.txt)
+
 ## Model Instructions 
 
 **Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). My Model code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’. 
@@ -27,4 +33,4 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
  
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
 
-# More details on the MIT License associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
+More details on the **MIT License** associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
