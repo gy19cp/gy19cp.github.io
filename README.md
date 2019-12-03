@@ -26,3 +26,5 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
 ![RunModelScreenshot](https://user-images.githubusercontent.com/56165241/69907328-44b19900-13cb-11ea-8c2d-d5cf8b92229e.jpg "Run Model")
  
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
+
+# More details on the MIT License associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
