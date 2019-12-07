@@ -15,7 +15,7 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
 
 **Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). My Model code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’. 
 
-![Spyder Screenshot](https://user-images.githubusercontent.com/56165241/69907285-2ac38680-13ca-11ea-95c8-17061d5b289d.jpg "Initiating Spyder")
+![Spyder Screenshot](SpyderScreenshot.jpg "Initiating Spyder")
 
 **Step 2 -** Download the necessary files by clicking on the following hyperlinks - [User Model](http://gy19cp.github.io/model.py), [Developer Model](http://gy19cp.github.io/model.py), [Agent Framework](http://gy19cp.github.io/model.py) and [‘in’.txt](https://gy19cp.github.io/in.txt). All these files should be downloaded to the computers ‘Downloads’ folder. The User Model contains basic comments for ease for the user. The Developer Model version contains explanatory comments, testing, and debugging. 
 
