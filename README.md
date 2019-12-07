@@ -19,18 +19,18 @@ This animated agent-based model uses Spyder (Anaconda 3). The model code interac
 
 **Step 2 -** Download the necessary files by clicking on the following hyperlinks - [User Model](http://gy19cp.github.io/model.py), [Developer Model](http://gy19cp.github.io/model.py), [Agent Framework](http://gy19cp.github.io/model.py) and [‘in’.txt](https://gy19cp.github.io/in.txt). All these files should be downloaded to the computers ‘Downloads’ folder. The User Model contains basic comments for ease for the user. The Developer Model version contains explanatory comments, testing, and debugging. 
 
-![DownloadsScreenshot](https://user-images.githubusercontent.com/56165241/69907287-2b5c1d00-13ca-11ea-81a7-fdfd7cf06fb5.jpg "Downloads")
+![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads")
 
 **Step 3 -** Once downloaded, open Spyder and open the Agent Framework file and the selected Model (either the User/Developer version). 
 
 **Step 4 -** Have the ‘agentframework’ file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
 
-![AgentFrameworkScreenshot](https://user-images.githubusercontent.com/56165241/69907286-2b5c1d00-13ca-11ea-8e9f-2aec1f3b7d56.jpg "Agent Framework")
+![AgentFrameworkScreenshot](AgentFrameworkScreenshot.jpg "Agent Framework")
   
 **Step 5 -** Now select the ‘model’ file within Spyder and click ‘Run’ again. This time a box entitled ‘Model’ should pop out. Click the subheading ‘Menu’ and ‘Run Model’. 
  
-![RunModelScreenshot](https://user-images.githubusercontent.com/56165241/69907328-44b19900-13cb-11ea-8c2d-d5cf8b92229e.jpg "Run Model")
+![RunModelScreenshot](RunModelScreenshot.jpg "Run Model")
  
 When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a Fox has ‘eaten’ a ‘Sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed. 
 
-More details on the **MIT License** associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
+More details on the **GNU General Public License v3.0** associated with this model can be found [here](https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE).
