@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Model Details</title>
-  </head>
-  <body>
-    <h1>Model Details</h1>
+<head>
+<title>Portfolio</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+<style>
+  body{
+    font-family: "Lato", sans-serif; 
+}
     
-    <h1>Model Summary</h1>
-    <p>This course has developed computer programming practical skills, particuarly with the use of Spyder (Anaconda 3) to create an agent-based model, which involves writing and structuring code, getting different code to interact and gettings code to interact with users. This  model inparticular is animated and interacts with an agent code and an environment to produce coordinates on a 'raster' grid. The plotted points (coordinates) for the 'Foxes' variables are produced randomly and the 'Agents' (Sheep) are plotted from an online web-derived set of data points. The 'Agents' in the model- move, 'eat' the environment, share with their nearest neighbour and a selection of the 'Agents' are unfortunately subsequently 'eaten' by the 'Foxes' when the 'Agents' get too close. The code uses core Python language with an object oriented approach, continous integration and web-scraping.</p>
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px; 
+  left: 10px;
+  background-color: #eee;
+  overflow-x: hidden; 
+  padding-top: 8px, 0;
+}
 
-    <h1>Model Instructions</h1>
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  display: block;
+}
+  
+.sidenav a:hover {
+  color: #064579;
+}
+.main {
+  margin-left: 140px;
+  font size: 25px;
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+  
+<div class="sidenav">
+  <a href="https://github.com/gy19cp">GitHub Profile</a>
+  <a href="https://gy19cp.github.io/about.html">About Me</a>
+  <a href="https://gy19cp.github.io/modeldetails.html">Model Details</a>
+  <a href="http://gy19cp.github.io/developermodel.py">Developer Model Code</a>
+  <a href="http://gy19cp.github.io/usermodel.py">User Model Code</a>
+  <a href="https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE">Model License</a>
+</div>
+    
+<div class="main">
+  <h2>Model Details</h2>
+ 
+  <h3>Model Summary</h3>
+  <p>This course has developed computer programming practical skills, particuarly with the use of Spyder (Anaconda 3) to create an agent-based model, which involves writing and structuring code, getting different code to interact and gettings code to interact with users. This  model inparticular is animated and interacts with an agent code and an environment to produce coordinates on a 'raster' grid. The plotted points (coordinates) for the 'Foxes' variables are produced randomly and the 'Agents' (Sheep) are plotted from an online web-derived set of data points. The 'Agents' in the model- move, 'eat' the environment, share with their nearest neighbour and a selection of the 'Agents' are unfortunately subsequently 'eaten' by the 'Foxes' when the 'Agents' get too close. The code uses core Python language with an object oriented approach, continous integration and web-scraping.</p>
+  
+  <h3>Model Instructions</h3>
     <ul>
-      <li><p>Step 1. Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution <a href="https://www.anaconda.com/distribution/">here</a>. My Model code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’.</p></li> 
-      <li><p>Step 2. Select this <a href="https://github.com/gy19cp/gy19cp.github.io">Repository</a> hyperlink, which should take you directly to the model repository within the Github website. This contains all files for the model.</p></li>
-      <li><p>Step 3. Select the green ‘clone or download’ button and download ‘Zip’. </p></li> 
-      <li><p>Step 4. Once downloaded, select the folder, extract all into a suitable file and open Spyder.</p></li> 
-      <li><p>Step 5. Within Spyder, click on ‘File’ and ‘Open’, ensuring you locate to where you previously extracted the file. Hold the shift key and choose ‘agentframework’ and ‘model’ to ‘open’.</p></li> 
-      <li><p>Step 6. Have the ‘agentframework’ file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.</p></li> 
-      <li><p>Step 7. Now the model will be run. Select the ‘model’ file within Spyder and click ‘Run’ again. This time a box entitled ‘Model’ should pop out. Click the subheading ‘Menu’ and ‘Run Model’.</p></li> 
+      <li><p><b>Step 1.</b> Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution <a href="https://www.anaconda.com/distribution/">here</a>. My Model code works with Python 3.7. Ensure when going through the installation process that you download ‘Spyder’.</p></li> 
+      <li><p><b>Step 2.</b> Select this <a href="https://github.com/gy19cp/gy19cp.github.io">Repository</a> hyperlink, which should take you directly to the model repository within the Github website. This contains all files for the model.</p></li>
+      <li><p><b>Step 3.</b> Select the green ‘clone or download’ button and download ‘Zip’. </p></li> 
+      <li><p><b>Step 4.</b> Once downloaded, select the folder, extract all into a suitable file and open Spyder.</p></li> 
+      <li><p><b>Step 5.</b> Within Spyder, click on ‘File’ and ‘Open’, ensuring you locate to where you previously extracted the file. Hold the shift key and choose ‘agentframework’ and ‘model’ to ‘open’.</p></li> 
+      <li><p><b>Step 6.</b> Have the ‘agentframework’ file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.</p></li> 
+      <li><p><b>Step 7.</b> Now the model will be run. Select the ‘model’ file within Spyder and click ‘Run’ again. This time a box entitled ‘Model’ should pop out. Click the subheading ‘Menu’ and ‘Run Model’.</p></li> 
       <li><p>When the model is run, the orange dots represent ‘Foxes’ and the white dots represent ‘Sheep’. Where there are squares of differing darkness and no sheep around it is likely a ‘fox’ has ‘eaten’ a ‘sheep’. This model will run until a specific number of steps (‘num_of_iterations’) has been completed.</p></li> 
     </ul> 
-    
-    <ul> 
-      <li><p><a href="https://gy19cp.github.io/index.html">Home Page</a></p></li>
-      <li><p><a href="https://gy19cp.github.io/about.html">About Me</a></p></li>
-      <li><p><a href="https://github.com/gy19cp/gy19cp.github.io">Model Repository</a></p></li>
-      <li><p><a href="https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE">Model Licence</a></p></li>
+    <p>Sidebar created and modified using html code from <a href="https://https://www.w3schools.com/">W3Schools</a>.</p>
+</div>
 
-    </ul> 
-    
-    
   </body>
 </html>
