@@ -6,7 +6,7 @@
 content="width=device-width, initial-scale=1">
 <style>
   body{
-    font-family: "Lato", sans-serif; 
+    font-family: sans-serif; 
 }
     
 .sidenav {
@@ -19,7 +19,6 @@ content="width=device-width, initial-scale=1">
   overflow-x: hidden; 
   padding-top: 8px, 0;
 }
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -35,31 +34,60 @@ content="width=device-width, initial-scale=1">
   margin-left: 160px;
   font size: 25px;
   padding: 0px 10px;
+  font-color: #e6e6e6;
+  p.small {
+  line-height: 0.7;
+}
 }
 @media screen and (max-height: 450px) 
 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .footer {font-size: 10px;}
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  color: #737373;
+  z-index: 1;
+  font-size: 15px;
+  text-align: left;
+  padding: 0px 10px;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+  
+}
+  img {
+  width: 45%;
+  height: 25%;
 }
 </style>
+
 </head>
 <body>
   
-<div class="sidenav">  
+<div class="sidenav">
   <a href="https://gy19cp.github.io/index.html">Home Page</a>
-  <a href="https://gy19cp.github.io/about.html">About Me</a>
+  <a href="https://gy19cp.github.io/about.html">About</a>
   <a href="https://gy19cp.github.io/modeldetails.html">Model Details</a>
   <a href="https://github.com/gy19cp">GitHub Profile</a>
-  <a href="https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE">Model License</a>
-</div>
+  </div>
     
 <div class="main">
-  <h2>About Me</h2>
+  <h2>About</h2>
  <p>Claire is a current MSc Geographical Information Systems (GIS) student at the University of Leeds (2019-2020). Modules chosen comprise of Data Visualisation and Analysis, Programming for Geographical Information Analysis: Core Skills, and Personal and Professional Development.  Next Semester modules will be Geodemographics and Neighbourhood Analysis, Personal and Professional Development, Web-based GIS, Dissertation and Digital Image Processing for Environmental Remote Sensing.</p> 
  <p>She was previously awarded a first class BSc Geography degree from Bangor University, North Wales. Her dissertation focussed on "Potentially Harmful Elements due to Metal Mining contamination in Cononley Beck, a tributary of the River Aire, North Yorkshire", which can be made available upon request. She completed this alongside six modules including an advanced GIS and Remote Sensing course, where 92% was awarded upon course completion. This course covered the use of ArcGIS and extensions: Model Builder and Network Analyst alongside ArcGlobe and ArcScene.</p>
- <span style="background-color: #F2A41C">Sidebar created and modified using html code from <a href="https://https://www.w3schools.com/">W3Schools</a>.</span style>
-</div>
+  <img src="Highlands.jpg" alt="Walking in the Highlands"/>
+  <p class="small"><font size="2"><i>Hiking in the Highlands.</i></font></p>
+    </div>
 
-  </body>
+<div class="footer">
+  <p>Sidebar and Footer created and modified using html code from <a href="https://https://www.w3schools.com/">W3Schools</a>.</p> 
+  </div>
+  
+</body>
 </html>
-
+   
