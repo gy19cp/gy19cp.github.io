@@ -7,7 +7,7 @@ content="width=device-width, initial-scale=1">
 <style>
   body{
     font-family: sans-serif;
-    background-color: #99ff99;
+    background-color: #ffffff;
 }
     
 .sidenav {
@@ -40,13 +40,16 @@ content="width=device-width, initial-scale=1">
 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .footer {font-size: 15px;}
+  .footer {font-size: 10px;}
 }
 .footer {
-   left: 0;
+  position: fixed;
+  left: 0;
   bottom: 0;
+  width: 100%;
   background-color: #eee;
   color: #737373;
+  z-index: 1;
   font-size: 15px;
   text-align: left;
   padding: 0px 10px;
@@ -71,13 +74,14 @@ content="width=device-width, initial-scale=1">
   <p>The Assessment 1 Repository is found <a href="https://github.com/gy19cp/GEOG5990Assessment1">here</a>.</p>
 
   <h3>Model Summary</h3>
-  <ul> 
-  <li>All model code is located within the Assessment 1 Repository (linked above), along with the associated files for the README, 
-    Licensing and Documentation.</li>
+   
+  <p>All model code is located within the Assessment 1 Repository (linked above), along with the associated files for the README, 
+    Licensing and Documentation. The <a href="https://github.com/gy19cp/GEOG5990Assessment1/blob/master/README.md">README</a> contains 
+    a more detailed Model Summary, which should be read before running the Model.</p>
+  <ul>  
   <li>This animated agent-based model uses Spyder (Anaconda 3) Python 3.7.</li>
-  <li>The model code interacts with an agent framework code and an environment to produce coordinates on a 'raster' grid. The 
-    coordinates for the 'Sheep' variables are produced randomly and the 'Foxes' are plotted from an online web-derived set of data 
-    points.</li>
+  <li>The model code interacts with an agent framework code and an environment to produce coordinates on a 'raster' grid. The xy 
+    coordinates for the 'Sheep' variables are produced randomly and the 'Foxes' are plotted from an online html file.</li>
   <li>The number of Sheep and Foxes is determined by a Graphical User Interface (GUI) slider. Between 50 to 100 Sheep can be chosen and 
     between 5 to 15 Foxes can be chosen.</li>  
   </ul>
@@ -86,8 +90,10 @@ content="width=device-width, initial-scale=1">
   <li>Both the ‘Foxes’ and ‘Sheep’ variables are defined as ‘Agents’ at distinctly defined separate times within the model. The
     'Sheep' in the model- move, 'eat' the environment (grass), share food with their nearest neighbour and a selection of the 'Sheep' 
     are unfortunately subsequently 'killed' by the 'Foxes' when the 'Foxes' get sufficiently close.</li>
-  <li>Once either the maximum number of iterations is met or the code is manually closed via the menu bar or the Foxes food storage 
-    capacity is reached, the model stops.</li> 
+  <li>Once the Foxes Food Store Capacity or the maximum Number of Iterations is met, or the code is manually closed via the 'Step 5' 
+    button/through the menu bar, the model stops.</li> 
+  <li>The Model can be rerun instantly by following Steps 1-4 within the Model again.</li>
+      
   <li>The code uses core Python language with an object-oriented approach, continuous integration and web-scraping.</li>  
     </ul> 
   <p>The <b>GNU General Public License v3.0</b> associated with this model can be found 
