@@ -71,15 +71,29 @@ content="width=device-width, initial-scale=1">
     
 <div class="main">
   <h2>Assessment 2 Model Details</h2>
-  <p>In the process of being completed.</p>
   <p>The Assessment 2 Repository is found <a href="https://github.com/gy19cp/GEOG5990Assessment2">here</a>.</p>
 
   <h3>Model Summary</h3>
   <ul> 
-  <li>All model code is located within the Assessment 2 Repository (linked above), along with the associated files for the README, 
-    Licensing and Documentation.</li>
-  <li>This animated agent-based model uses Spyder (Anaconda 3) Python 3.7.</li>
-  </ul> 
+  <p>All model code is located within the Assessment 2 Repository (linked above), along with the associated files for the README,
+    Licensing and Documentation. The README contains a Model Summary, which should be read after this page, followed by a detailed Model Guidance PDF before running the Model.
+    The Model Guidance contains detail on the software intention, current issues, design, Unified Modelling Language (UML) Diagrams and future developments.
+</p>
+    <li>This animated agent-based model uses Spyder (Anaconda 3) <b>Python 3.7</b>.</li>
+  <li>The model code interacts with an agent framework code and an environment to produce coordinates on a 300 by 300 'raster' grid. Both Drunks and Police xy coordinates are produced <b>randomly</b>. Code within the 'move, check_drunks and check_police' functions enable Drunks to move away from Police and likewise Police closer to Drunks. 
+    The number of Drunks is already established as <b>25</b>, so this a home for each Drunk. The number of Police is determined by a Graphical User Interface (GUI) slider, between <b>1</b> to <b>5</b> Police can be chosen.
+  </ul>
+  <img src="RunModelScreenshot.jpg" alt="Run Model" height="600" width="850">
+  <ul>
+  <li> Both the ‘Drunks’ and ‘Police’ variables are defined as <b>‘Agents’</b> at distinctly defined separate times within the model. The
+     Drunks attempt to- <b>move</b>, <b>check for Police</b>, <b>produce a trail</b> showing agent movements in real time and at the moment unsuccesfully <b>get home</b> and <b>stop</b> once they reach home.</li>
+    <li> Police attempt to - <b>move</b>, <b>check for Drunks</b> and <b>guide Drunks home</b>.
+    <li>Once all Drunks <b>reach home</b>, or Police reach (300, 300) coordinates or the maximum Number of <b>Iterations</b> is met, or the code is manually closed 
+        via the 'Step E' button/through the menu bar, the model stops. The first two model stop reasons are not currently successful despite multiple attempts.</li> 
+  <li>The Model can be rerun by closing and reopening the Model.</li>
+      
+      <li>The code uses core Python language with <b>agent based modelling</b>, <b>object-oriented approach</b> and <b>continuous integration</b></li>  
+    </ul> 
   <p>The <b>GNU General Public License v3.0</b> associated with this model can be found 
     <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE">here</a>.</p>
   </div>
