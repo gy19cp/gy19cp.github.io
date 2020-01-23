@@ -234,6 +234,4 @@ class Police(Agent):
         if self.x > 299:
             self.x = 299
  
- 
-   
         
