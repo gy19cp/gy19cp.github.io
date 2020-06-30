@@ -5,7 +5,7 @@ Queries parameterized, coding sanitized and alerts to inform user, all in place 
 	<title>Project</title>
 	
 	<link rel="stylesheet" type="text/css" href="map_style.css">
-	<script type="text/javascript" src="page_setup.js"></script> <!--Links all functions for page style (header, footer), map (markers), buttons and more.-->
+	<script type="text/javascript" src="/webbased/page_setup.js"></script> <!--Links all functions for page style (header, footer), map (markers), buttons and more.-->
 	
 </head>
 
