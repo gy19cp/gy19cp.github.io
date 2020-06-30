@@ -8,6 +8,7 @@ var myCentreLng = -4.592285; // Starting Longitude position.
 var initialZoom = 7; // Initial Zoom factor. 
 var infowindow; // Global variable.
 
+var google; 
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
