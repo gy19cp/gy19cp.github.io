@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>GY19CP Portfolio</title>
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
-<style>
-  body{
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-    
-.sidenav {
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 20px; 
-  left: 10px;
-  background-color: #eee;
-  overflow-x: hidden; 
-  padding-top: 8px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #2196F3;
-  display: block;
-}
-  
-.sidenav a:hover {
-  color: #064579;
-}
-.main {
-  margin-left: 160px;
-  font: 25px;
-  padding: 0px 10px;
-}
-@media screen and (max-height: 450px) 
-{
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .footer {font-size: 10px;}
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #eee;
-  color: #737373;
-  z-index: 1;
-  font-size: 15px;
-  text-align: left;
-  padding: 0px 10px;
-  overflow-x: hidden; 
-  overflow-y: hidden; 
-}
-  </style>
+<head> <!--All files linked to ensure html page works.--> 
+	<title>Field Python</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Webpage will adjust to devices used.--> 
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"> <!--Icons for address browswer suited to all computer, laptop and phones.-->
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/webbased/site.webmanifest"> <!--Ensures icons can be seen in address browser.-->
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--Library required for graph and navigation bar.-->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/> <!--Links stylesheet with all body, map and infowindow styles.--> 
+	<script language="JavaScript" type="text/JavaScript" src="/webbased/page_setup.js"></script> <!--Creates sticky navigation bar.-->
 </head>
-<body>
-  
-<div class="sidenav">
-  <a href="https://gy19cp.github.io/index.html">Home Page</a>
-  <a href="https://gy19cp.github.io/about.html">About</a>
-  <a href="https://gy19cp.github.io/model1summary.html">Model 1</a>
-  <a href="https://gy19cp.github.io/model2summary.html">Model 2</a>
-  <a href="https://github.com/gy19cp">GitHub Profile</a>
-  </div>
-    
-<div class="main">
-  <h2>Assessment 2 Model Details</h2>
-  <p>The Assessment 2 Repository is found <a href="https://github.com/gy19cp/GEOG5990Assessment2">here</a>.</p>
 
-  <h3>Model Summary</h3>
-  
-  <p>All model code is located within the Assessment 2 Repository (linked above), along with the associated files for the README,
-    <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE">Licensing</a> and Documentation. The README contains a Model Summary, which should be read after this page, followed by a detailed Model
+<body>
+	<div class="wrap"> <!--Ensures space between top of footer and end of webpage text.-->
+	<div class="header"><img src="/images/onlineportfolio.png" alt="Online Portfolio" style="width:100%;">
+	<div class="centered">Field Python Model</div> <!--Header with text and photo.-->	
+</div>
+
+<div id="topnav"> <!--Navigation Bar linking different parts of the final Project.--> 
+	<a href="index.html">Home</a> <!--Hyperlink to Home Page --> 
+	<a href="about.html">About</a>
+	<a href="houseprices.html">House Prices</a> <!--House Prices page. -->
+ 	<a class="active" href="model1summary.html">Field Python</a> <!--Python Model 1 page, currently selected. -->
+	<a href="model2summary.html">Student Python</a> <!--Python Model 2 page. -->
+ 	<a href="https://github.com/gy19cp">GitHub Profile</a>
+</div>
+    
+<div class="content">
+    <h2>Assessment 2 Model Summary</h2>
+    <p>Created as part of the GEOG5990: Programming for Geographical Information Analysts: Core Skills, a module incorporated into the MSc Geographical Information Systems at the University of Leeds.</p>
+
+    <p>All model code is located within the <a href="https://github.com/gy19cp/GEOG5990Assessment2">Assessment 2 Repository</a>, along with the associated files for the README, GNU General Public License v3.0
+    <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE"> Licensing</a> and Documentation. 
+    The <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/README.md">README</a> contains a Model Summary, which should be read after this page, followed by a detailed Model
     Guidance PDF before running the Model. The Model Guidance contains detail on the software intention, current issues, design, 
     Unified Modelling Language (UML) Diagrams and future developments.</p>
-  <ul>
+<ul>
     <li>This animated agent-based model uses Spyder (Anaconda 3) <b>Python 3.7</b>.</li>
-  <li>The model code interacts with an agent framework code and an environment to produce coordinates on a 300 by 300 'raster' grid. 
+    <li>The model code interacts with an agent framework code and an environment to produce coordinates on a 300 by 300 'raster' grid. 
     Both Drunks and Police xy coordinates are produced <b>randomly</b>. Code within the 'move, check_drunks and check_police' functions
     enable Drunks to move away from Police and likewise Police closer to Drunks. The number of Drunks is already established as 
     <b>25</b>, so this a home for each Drunk. The number of Police is determined by a Graphical User Interface (GUI) slider, between
     <b>1</b> to <b>5</b> Police can be chosen.
-  </ul>
-  <img src="/images/RunModel2Screenshot.jpg" alt="Run Model2" height="600" width="750">
-  <ul>
-  <li> Both the ‘Drunks’ and ‘Police’ variables are defined as <b>‘Agents’</b> at distinctly defined separate times within the model. 
+</ul>
+    <img src="/images/RunModel2Screenshot.jpg" alt="Run Model2" height="600" width="750">
+    <ul>
+    <li> Both the ‘Drunks’ and ‘Police’ variables are defined as <b>‘Agents’</b> at distinctly defined separate times within the model. 
     The Drunks attempt to- <b>move</b>, <b>check for Police</b>, <b>produce a trail</b> showing agent movements in real time and 
     currently unsuccesfully <b>get home</b> and <b>stop</b> once they reach home.</li>
     <li> Police attempt to - <b>move</b>, <b>check for Drunks</b> and <b>guide Drunks home</b>.
     <li>Once all Drunks <b>reach home</b>, or Police reach coordinates (300, 300) or the maximum Number of <b>Iterations</b> is met, or
       the code is manually closed via the 'Step E' button/through the menu bar, the model stops. The first two model stop reasons are 
       not currently successful despite multiple attempts.</li> 
-  <li>The Model can be rerun by closing and reopening the Model.</li>
+    <li>The Model can be rerun by closing and reopening the Model.</li>
       
-      <li>The code uses core Python language with <b>agent based modelling</b>, <b>object-oriented approach</b> and <b>continuous 
+    <li>The code uses core Python language with <b>agent based modelling</b>, <b>object-oriented approach</b> and <b>continuous 
         integration.</b></li>  
-    </ul> 
-  <p>The <b>GNU General Public License v3.0</b> associated with this model can be found 
-    <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE">here</a>.</p>
-  </div>
+</ul> 
+     <p>The <b>GNU General Public License v3.0</b> associated with this model can be found 
+     <a href="https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE">here</a>.</p>
+</div>
 
-  <div class="footer">
-  <p>Sidebar and Footer created and modified using html code from <a href="https://www.w3schools.com/">W3Schools</a>.</p> 
-  </div>
-  </body>
+<div class = "footer"><p>Launched 2020<img src="/images/rocket.png" alt="Rocket" style="width:3%;"></p>
+</div>
+
+</body>
 </html>  
