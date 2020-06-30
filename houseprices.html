@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head> <!--All files linked to ensure html page works.--> 
+	<title>Scotland's no. 1 property website</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Webpage will adjust to devices used.--> 
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> <!--Icons for address browswer suited to all computer, laptop and phones.-->
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="../project/uk/site.webmanifest"> <!--Ensures icons can be seen in address browser.-->
+	
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script> <!--Google API for Map on html webpage.-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!--Google Charts loader. Used for graph adjacent to map.-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--Library required for graph and navigation bar.-->
+	<script type="text/javascript" src="jscoord-1.1.1.js"></script> <!--A Geocoding Library. Loaded before cooordinate converting script using the library.--> 
+	
+	<script type="text/javascript" src="map_data.js"></script> <!--Comprises council markers and boundary overlay coordinates.--> 
+	<script type="text/javascript" src="page_setup.js"></script> <!--Links all functions for page style (header, footer), map (markers), buttons and more.-->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"> <!--Links stylesheet with all body, map, infowindow and button design styles.--> 	
+</head>
+
+<body>
+	<div class="wrap"> <!--Ensures space between top of footer and end of webpage text.-->
+	<div class="header"><img src="scottishhouse.png" alt="Scottish House" style="width:100%;">
+	<div class="centered">Scotland Properties</div> <!--Header with text and photo.-->	
+</div>
+
+<div id="topnav"> <!--Navigation Bar linking different parts of the final Project.--> 
+	<a href="../index.html">Home</a> <!--Hyperlink to Home Page. --> 
+	<a class="active" href="../scotland/houseprices.html">House Prices</a> <!--House Prices page, currently selected.-->
+</div>
+
+<body onload="initialize()"> <!--Loads map functions and variables from page_setup.js.-->
+<div class="content">
+	<div class="gmap" id="map_canvas" style="height: 600px; width: 800px;"></div> <!-- Map with markers and infowindows is inserted onto page here.--> 
+
+<noscript>JavaScript required. This web browser does not support JavaScript or JavaScript in this web browser not enabled. See web browser help to enable
+ JavaScript or find out if your web browser supports JavaScript.</noscript> <!--Shows user when and why Javascript is not working.-->
+
+	<h1>House Prices</h1>
+	<p>Annual average House Prices <b>January 2010 to February 2020</b> across <b>all 32 Scotland Councils</b>. Click markers for council variations.
+	Initial focus is on mainland Scotland, pan and zoom out to view all islands. Council boundaries can be seen by the overlays.</p>
+
+	<h2>Market Trends</h2>
+	<p><b>Scotland has lower overall average house prices</b> than the whole of the United Kingdom. Generally house prices have risen year on year (except 2013) 
+	over the last decade. Across Scotland, the most expensive region today is City of Edinburgh, with the <b>cheapest region</b> being East Ayrshire. 
+	Western Isles has seen the <b>greatest decadal price growth</b>, North Ayrshire has <b>maintained</b> a consistent price range, and City of Aberdeen has 
+	the greatest property price fall since 2010.</p>
+	
+    <div class="graph" id="graph" style="height: 300px; width: 499px;"></div> 
+	<!--Interactive Graph adapted from Developers (see Report Reference List). Graph appears every time, legend text does not always appear. Future fix.-->
+
+	<h2>Advice</h2> <!--List of text including source and copyright details.--> 
+<ul>
+	<li><b>Receive regular updates</b> from us with the latest property news, advice and latest properties available by signing up to our monthly emails. 
+	<li>Find out more from the <b>Bank of England</b> about how the housing market is impacted by the economy, by clicking
+	<a href="https://www.bankofengland.co.uk/knowledgebank/how-does-the-housing-market-affect-the-economy">here</a>.
+	<li><b>UK Government overview</b> and raw house price data can be found <a href="https://www.gov.uk/government/publications/uk-house-price-index-summary-february-2020/uk-house-price-index-summary-february-2020">here</a>.  
+</ul>
+
+	<h2>Visitor Survey</h2>
+	<h4>Which of the following do you want to achieve?</h4>
+	<p>After selecting a button your answer will be <i>added</i> and <i>displayed</i> alongside other visitor's responses.</p>
+
+<div class="button-group"> <!--Each button can be selected, once clicked text appears underneath all buttons.-->
+	<button onclick="LiveIn()">Live In</button>
+	<button onclick="Rent()">Rent</button>	
+	<button onclick="Resell()">Resell for Profit</button>
+	<button onclick="Other()">Other</button>
+
+</div><p>
+	<div id="longterm"></div> <!--Text is printed below the buttons followed by a numerical counter. This counter increases everytime a visitor selects it.-->
+	<div id="shortterm"></div> <!--Order of text follows button order above.-->
+	<div id="nonresident"></div>
+	<div id="unknown"></div></p>
+	
+<div class = "footer"> <!--Footer includes text box where visitors can insert their email address, associated with inputData.php.-->
+	<form id = 'insertData' onsubmit ='return validate();' method ='POST' enctype="multipart/form-data"> 	
+	<p>Be the first to see <b>new properties</b>. Scotland Properties will send monthly emails with <b>latest 'hot' properties, advice and much more</b>...
+	<input type = 'text' class = 'boxes' placeholder = 'Enter Email Address' id = 'email' name = 'email'>
+	<input type='submit' id ='submit' name = 'Submit' value= 'Submit'></p> 
+	<!--All email address code is parametized and sanitized. Page refreshes when email submitted correctly.-->
+
+</form>
+</div>
+
+</div>
+</body>
+</html>
