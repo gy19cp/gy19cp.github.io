@@ -1,73 +1,34 @@
 <!DOCTYPE html>
+<html>
 <html lang="en">
-<head>
-<title>GY19CP Portfolio</title>
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
-<style>
-  body{
-    font-family: sans-serif;
-    background-color: #ffffff;
-}
-    
-.sidenav {
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 20px; 
-  left: 10px;
-  background-color: #eee;
-  overflow-x: hidden; 
-  padding-top: 8px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #2196F3;
-  display: block;
-}
- 
-.sidenav a:hover {
-  color: #064579;
-}
-.main {
-  margin-left: 160px;
-  font: 25px;
-  padding: 0px 10px;
-}
-@media screen and (max-height: 450px) 
-{
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .footer {font-size: 10px;}
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #eee;
-  color: #737373;
-  z-index: 1;
-  font-size: 15px;
-  text-align: left;
-  padding: 0px 10px;
-  overflow-x: hidden; 
-  overflow-y: hidden; 
-}
-  </style>
+<head> <!--All files linked to ensure html page works.--> 
+	<title>Field Python</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Webpage will adjust to devices used.--> 
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"> <!--Icons for address browswer suited to all computer, laptop and phones.-->
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/webbased/site.webmanifest"> <!--Ensures icons can be seen in address browser.-->
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--Library required for graph and navigation bar.-->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/> <!--Links stylesheet with all body, map and infowindow styles.--> 
+	<script language="JavaScript" type="text/JavaScript" src="/webbased/page_setup.js"></script> <!--Creates sticky navigation bar.-->
 </head>
+
 <body>
-  
-<div class="sidenav">
-  <a href="https://gy19cp.github.io/index.html">Home Page</a>
-  <a href="https://gy19cp.github.io/about.html">About</a>
-  <a href="https://gy19cp.github.io/model1summary.html">Model 1</a>
-  <a href="https://gy19cp.github.io/model2summary.html">Model 2</a>
-  <a href="https://github.com/gy19cp">GitHub Profile</a>
-  </div>
+	<div class="wrap"> <!--Ensures space between top of footer and end of webpage text.-->
+	<div class="header"><img src="/images/onlineportfolio.png" alt="Online Portfolio" style="width:100%;">
+	<div class="centered">Online Portfolio</div> <!--Header with text and photo.-->	
+</div>
+
+<div id="topnav"> <!--Navigation Bar linking different parts of the final Project.--> 
+.	<a href="index.html">Home</a> <!--Hyperlink to Home Page --> 
+	<a href="about.html">About</a>
+	<a href="houseprices.html">House Prices</a> <!--House Prices page. -->
+ 	<a class="active" href="model1summary.html">Field Python</a> <!--Python Model 1 page, currently selected. -->
+	<a href="model2summary.html">Student Python</a> <!--Python Model 2 page. -->
+ 	<a href="https://github.com/gy19cp">GitHub Profile</a>
+</div>
     
 <div class="main">
   <h2>Assessment 1 Model Details</h2>
@@ -102,8 +63,8 @@ content="width=device-width, initial-scale=1">
     <a href="https://github.com/gy19cp/gy19cp.github.io/blob/master/LICENSE">here</a>.</p>
     </div>
 
-  <div class="footer">
-  <p>Sidebar and Footer created and modified using html code from <a href="https://www.w3schools.com/">W3Schools</a>.</p> 
-  </div>
-  </body>
+<div class = "footer"><p>Launched 2020<img src="/images/rocket.png" alt="Rocket" style="width:3%;"></p>
+</div>
+
+</body>
 </html>  
