@@ -16,7 +16,7 @@ function addMarker(myPos,myTitle,myInfo) { // Determines the marker icon design 
 	   position: myPos, // Determines the Marker location on map.
 	   map: map, 
 	   title: myTitle,
-	   icon: 'condominium.png' // Determines icon used for the marker.
+	   icon: '/images/condominium.png' // Determines icon used for the marker.
 });
    infowindow = new google.maps.InfoWindow(); // Enables an infowindow to appear. The text is location-specific.  
    google.maps.event.addListener (marker, 'click', function() { // The text is viewed once the marker is clicked.
