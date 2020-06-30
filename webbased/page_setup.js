@@ -25,16 +25,27 @@ function addMarker(myPos,myTitle,myInfo) { // Determines the marker icon design 
 })
 }
  
-function addPoly(polyPath,myInfo,line_colour,fillvalue) { // Polygon style choices.
-	myPoly = new google.maps.Polygon({
-		paths: polyPath,
+function addPolya(polyPatha,myInfo,line_colour,fillvalue) { // Polygon style choices.
+	myPolya = new google.maps.Polygon({
+		paths: polyPatha,
 		strokeColor: line_colour, 
 		strokeOpacity: 0.8,
 		strokeWeight: 3,
 		fillColor: fillvalue,
 		fillOpacity: 0.2
 	});
-	myPoly.setMap(map); // Polygon set to map. Polygon and marker data is located in 'map_data.js' due to the high quantity of data required for accurate coordinates.
+	myPolya.setMap(map); // Polygon set to map. Polygon and marker data is located in 'map_data.js' due to the high quantity of data required for accurate coordinates.
+}
+function addPolyb(polyPathb,myInfo,line_colour,fillvalue) { // Polygon style choices.
+	myPolyb = new google.maps.Polygon({
+		paths: polyPathb,
+		strokeColor: line_colour, 
+		strokeOpacity: 0.8,
+		strokeWeight: 3,
+		fillColor: fillvalue,
+		fillOpacity: 0.2
+	});
+	myPolyb.setMap(map); // Polygon set to map. Polygon and marker data is located in 'map_data.js' due to the high quantity of data required for accurate coordinates.
 }
 
 			
@@ -62,7 +73,7 @@ function initialize() { // Loads local variables (e.g. latlng and myOptions).
    }
       
    for (id in os_polydata1) { // For loop creating the Polygon with specific data points.  
-		var polyPath = []; // Empty array. Points are read through.
+		var polyPatha = []; // Empty array. Points are read through.
 		
 		var thisBoundary = os_polydata1[id].boundary;
 		
@@ -72,14 +83,14 @@ function initialize() { // Loads local variables (e.g. latlng and myOptions).
 			var llPt = osPt.toLatLng(osPt); // 'toLatLng' from JScoord library, converts points to Latitude and Longitude.
 			llPt.OSGB36ToWGS84(); // Changing the Datum used (OS National Grid use a different one (OSGB36) to Google Maps). 
 			var myLatLng = new google.maps.LatLng(llPt.lat,llPt.lng); // 11pt acts as the object where the coordinates and datum are being changed.
-			polyPath.push(myLatLng); // Constructs the Polygon.
+			polyPatha.push(myLatLng); // Constructs the Polygon.
 		} 
 		var fillvalue = os_polydata1[id].value // Colour of each polygon centre is defined in 'value' rows of overlays.js file.
-		addPoly(polyPath, info,"#000000",fillvalue); // Adds Polygon with all coordinate points, and determines line colour and fill colour.
+		addPolya(polyPatha, info,"#000000",fillvalue); // Adds Polygon with all coordinate points, and determines line colour and fill colour.
 	}  
 	
 	for (id in os_polydata2) { // For loop creating the Polygon with specific data points.  
-		var polyPath = []; // Empty array. Points are read through.
+		var polyPathb = []; // Empty array. Points are read through.
 		
 		var thisBoundary = os_polydata2[id].boundary;
 		
@@ -89,10 +100,10 @@ function initialize() { // Loads local variables (e.g. latlng and myOptions).
 			var llPt = osPt.toLatLng(osPt); // 'toLatLng' from JScoord library, converts points to Latitude and Longitude.
 			llPt.OSGB36ToWGS84(); // Changing the Datum used (OS National Grid use a different one (OSGB36) to Google Maps). 
 			var myLatLng = new google.maps.LatLng(llPt.lat,llPt.lng); // 11pt acts as the object where the coordinates and datum are being changed.
-			polyPath.push(myLatLng); // Constructs the Polygon.
+			polyPathb.push(myLatLng); // Constructs the Polygon.
 		} 
 		var fillvalue = os_polydata2[id].value // Colour of each polygon centre is defined in 'value' rows of overlays.js file.
-		addPoly(polyPath, info,"#000000",fillvalue); // Adds Polygon with all coordinate points, and determines line colour and fill colour.
+		addPolyb(polyPathb, info,"#000000",fillvalue); // Adds Polygon with all coordinate points, and determines line colour and fill colour.
 	}  
 };
 
