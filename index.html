@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head> <!--All files linked to ensure html page works.--> 
+	<title>Scotland's no. 1 property website</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Webpage will adjust to devices used.--> 
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> <!--Icons for address browswer suited to all computer, laptop and phones.-->
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="../project/uk/site.webmanifest"> <!--Ensures icons can be seen in address browser.-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--Library required for graph and navigation bar.-->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"/> <!--Links stylesheet with all body, map and infowindow styles.--> 
+	<script language="JavaScript" type="text/JavaScript" src="page_setup.js"></script> <!--Creates sticky navigation bar.-->
+</head>
+
+<body>
+	<div class="wrap"> <!--Ensures space between top of footer and end of webpage text.-->
+	<div class="header"><img src="scottishhouse.png" alt="Scottish House" style="width:100%;">
+	<div class="centered">Scotland Properties</div> <!--Header with text and photo.-->	
+</div>
+
+<div id="topnav"> <!--Navigation Bar linking different parts of the final Project.--> 
+	<a class="active" href="../project/index.html">Home</a> <!--Hyperlink to Home Page. --> 
+	<a href="../project/scotland/houseprices.html">House Prices</a> <!--House Prices page, currently selected.-->
+</div>
+
+<div class="content">
+<noscript>JavaScript required. This web browser does not support JavaScript or JavaScript in this web browser not enabled. See web browser help to enable
+ JavaScript or find out if your web browser supports JavaScript.</noscript> <!--Shows user when and why Javascript is not working.-->
+
+	<h2>Find your Future Home</h2>
+	<p>Cater to any budget and any conditions to provide the perfect housing options for you. <b>Rent, buy or buy to sell for a future profit?</b> We've got you
+	covered!</p>
+	
+	<searchtext><b>Search:</b></searchtext>
+	<input type="text" id="searchinput" onkeyup="myFunction()" placeholder="e.g. 'Edinburgh', 'Highlands' or 'Aberdeen'">
+	
+<ul id="searchbar">
+  <li><b><a href="../project/uk/houseprices.html">*Most Popular*</a></b></li>
+  <li><a href="../project/uk/houseprices.html">Highlands</a></li>
+  <li><a href="../project/uk/houseprices.html">Edinburgh</a></li>
+  <li><a href="../project/uk/houseprices.html">Aberdeen</a></li>
+</ul>
+
+	<p><b>See our House Prices page</b> to see our interactive map showing <b>all Scotland councils and average house prices from 2010 to today</b>, so you can match
+	your budget, look for up-and-coming areas and see your ideal geographic location.</p>
+
+<div class = "footer"> <!--Footer includes text box where visitors can insert their email address, associated with inputData.php.-->
+<p> Discover your perfect residential location now, within your budget. </p></div>
+
+</div>
+</body>
+</html>
