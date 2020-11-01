@@ -33,16 +33,16 @@
 <noscript>JavaScript required. This web browser does not support JavaScript or JavaScript in this web browser is not enabled. See web browser help to enable
  JavaScript or find out if your web browser supports JavaScript.</noscript> <!--Shows user when and why Javascript is not working.-->
 	
-	<h2><u>Get in Touch!</u></h2>
+	<h1>Get in Touch!</h1>
 </div>
 
 <div class="container">
         <form action="action_page.php">
 
-        <label for="fname">First Name</label>
+        <label class="required" for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="First name..">
 
-        <label for="lname">Last Name</label>
+        <label class="required" for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Surname..">
 
 	<label for="location">Location</label>
@@ -70,8 +70,8 @@
 
 </select>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label class="required" for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
 
         <input type="submit" value="Submit">
 
