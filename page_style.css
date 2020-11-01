@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   background: #ffffff;
 }
+* {box-sizing: border-box;}
 
 h2{
   color: #4CAF50;
@@ -91,9 +92,9 @@ searchtext{
 }
 
 .graph {
-	height: 500px; 
-	width: 600px;
-	z-index: 1;
+   height: 500px; 
+   width: 600px;
+   z-index: 1;
 }
 
 /* Infowindow Design Styles */
@@ -142,12 +143,12 @@ searchtext{
 
 /* Button Design Styles */
 .button-group button {
-	background-color: #4CAF50;
-	border: 1px solid black; 
-	color: white;
-	padding: 10px 30px;
-	cursor: pointer;
-	float:  center;
+    background-color: #4CAF50;
+    border: 1px solid black; 
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    float:  center;
 }
 
 .button-group button:hover { 
